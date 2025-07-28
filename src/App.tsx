@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import ContentAnalyzer from './pages/ContentAnalyzer';
+import About from './pages/About';
 import DesignSystem from './pages/DesignSystem';
 import ModelPlayground from './pages/ModelPlayground';
 
@@ -11,6 +12,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<ContentAnalyzer />} />
+          <Route path="/about" element={<About />} />
           <Route path="/design-system" element={<DesignSystem />} />
           <Route path="/playground" element={<ModelPlayground />} />
         </Routes>

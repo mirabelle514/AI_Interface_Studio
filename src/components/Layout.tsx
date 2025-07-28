@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Brain, Palette, PlayCircle } from 'lucide-react';
+import { Brain, Palette, PlayCircle, Info } from 'lucide-react';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -34,6 +34,19 @@ export default function Layout({ children }: LayoutProps) {
               >
                 <Brain className="w-4 h-4" />
                 <span>Analyzer</span>
+              </NavLink>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  `flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    isActive
+                      ? 'bg-sage/20 text-navy border border-sage/30'
+                      : 'text-navy hover:text-navy hover:bg-navy/10'
+                  }`
+                }
+              >
+                <Info className="w-4 h-4" />
+                <span>About</span>
               </NavLink>
               <NavLink
                 to="/design-system"
