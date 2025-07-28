@@ -57,6 +57,41 @@ This project showcases the intersection of design systems engineering and AI/ML 
 - Lucide React for icons
 - Vite for development and building
 
+### Development Tools
+- TypeScript for type safety
+- ESLint for code quality
+- PostCSS with Autoprefixer
+- Vite for fast development and optimized builds
+
+### Build & Deployment
+- Vite build system
+- Modern ES modules
+- Tree-shaking for optimal bundle size
+- Hot module replacement for development
+
+### Dependencies
+```json
+{
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.7.1",
+    "lucide-react": "^0.344.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.3",
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "eslint": "^9.9.1",
+    "vite": "^5.4.2"
+  }
+}
+```
+
 ### Component Architecture
 - Modular AI-specific components
 - Reusable design system patterns
